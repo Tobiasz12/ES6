@@ -1,6 +1,3 @@
-const sayHello = () => alert('Hello world!');
-sayHello();
-
 
 //TASK 1
 function say(y,x) {
@@ -30,21 +27,3 @@ const logAllArguments = (...grades) => grades.forEach(item => console.log(item))
 const array = [1, 4, 'Iwona', false, 'Nowak'];
 const [, ,firstName, ,lastName] = array;
 console.log(firstName, lastName)
-
-
-
-
-
-
-
-
-
-
-
-
-
-function doStuff (x, y, z) { }
-var args = [0, 1, 2];
-
-// Call the function, passing args
-doStuff.apply(null, args);
