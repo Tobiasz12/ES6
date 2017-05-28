@@ -1,10 +1,5 @@
 'use strict';
 
-var sayHello = function sayHello() {
-  return alert('Hello world!');
-};
-sayHello();
-
 //TASK 1
 function say(y, x) {
   y = 'Hellow';
@@ -22,20 +17,16 @@ var multiply = function multiply() {
 multiply(2);
 
 //Task 3
-var arr = [1, 3, 6, 6];
-var a = arr[0],
-    b = arr[1],
-    c = arr[2],
-    rest = arr.slice(3);
+var grade = [2, 4, 4];
+var total = 0;
+function average(array) {
+  array.forEach(function (item) {
+    return total += item;
+  });
+  console.log(total / array.length);
+}
 
-
-var average = function average(a) {
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  var c = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-  var d = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-  return (a + b + c + d) / (arr.length - rest.length);
-};
-average(1, 3, 6);
+average(grade);
 
 //Task4
 var grades = [1, 5, 5, 5, 4, 3, 3, 2, 1];

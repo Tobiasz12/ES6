@@ -13,11 +13,14 @@ multiply(2)
 
 
 //Task 3
-const arr = [1,3,6,6]
-const [a,b,c,...rest] = arr
+const grade = [2,4,4];
+let total = 0;
+function average(array) {
+    array.forEach(item => total += item )
+     console.log(total/array.length);
+}
 
-const average = (a ,b = 0,c = 0 ,d = 0) => (a + b + c + d) / (arr.length - rest.length)
-average(1,3,6)
+average(grade);
 
 //Task4
 const grades = [1, 5, 5, 5, 4, 3, 3, 2, 1]
